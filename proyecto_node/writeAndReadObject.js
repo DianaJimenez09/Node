@@ -14,5 +14,4 @@ function writeAndRead(path, obj) {
   });
 }
 
-writeAndRead("./persona.json", { name: "a", surname: "b", age: 1 });
 module.exports = { writeAndRead };
