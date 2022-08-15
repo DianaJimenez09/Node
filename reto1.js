@@ -5,8 +5,8 @@ const server = http.createServer(function (request, response) {
     console.log("Request received from client");
     console.log(`La URL es ${request.url}`);
     console.log(`El método es: ${request.method}`);
-    console.log(`User-Agent: ${request.header["user-agent"]}`);
-    console.log(`Content-Length: ${request.headers["content-length"]}`);
+    console.log(`User-agent :   ${request.headers["user-agent"]}`);
+    console.log(`Content-lenght:" ${request.headers["content-length"]}`);
     response.writeHead(200, { "Content-Type": "application/json" });
     response.write(JSON.stringify({ ok: true, message: "Adiós!" }));
     response.end();
@@ -21,4 +21,4 @@ const server = http.createServer(function (request, response) {
     response.end();
   }
 });
-server.listen(3001);
+server.listen(3000);
