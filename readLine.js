@@ -23,13 +23,9 @@ rl.question("What is your name?", (name) => {
 
       let data = JSON.stringify(persona);
       fs.writeFile("persona.json", data, (error) => {
-        if (error) {
-          console.log(error);
-        }
-      });
-
-      fs.readFile("persona.json", () => {
-        console.log(JSON.parse(data));
+        fs.readFile("persona.json", () => {
+          console.log(JSON.parse(data));
+        });
       });
     });
   });
