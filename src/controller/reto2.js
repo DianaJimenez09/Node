@@ -1,5 +1,4 @@
 const { Professional } = require("../models/ImbdProfesional");
-const app = require("../app");
 
 let profes = [];
 
