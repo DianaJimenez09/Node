@@ -72,7 +72,7 @@ function getProfesId(request, response) {
     respuesta = {
       error: false,
       codigo: 200,
-      mensaje: "Profesionales encontrados",
+      mensaje: "Profesional encontrado",
       resultado: profes,
     };
   }
@@ -155,13 +155,13 @@ function deleteProfes(request, response) {
     respuesta = {
       error: false,
       codigo: 200,
-      mensaje: "Actor eliminado correctamente",
+      mensaje: "Profesional eliminado",
     };
   } else {
     respuesta = {
       error: true,
       codigo: 200,
-      mensaje: "No se ha eliminado ningún Actor",
+      mensaje: "No se ha eliminado Profesional",
     };
   }
   response.send(respuesta);
