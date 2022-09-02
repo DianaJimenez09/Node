@@ -8,14 +8,14 @@ function getStart(request, response) {
   response.send(respuesta);
 }
 
-function getUser(request, response) {
-  let respuesta;
-  if (usuario != null) respuesta = usuario;
-  else
-    respuesta = { error: true, codigo: 200, mensaje: "El usuario no existe" };
+// function getUser(request, response) {
+//   let respuesta;
+//   if (usuario != null) respuesta = usuario;
+//   else
+//     respuesta = { error: true, codigo: 200, mensaje: "El usuario no existe" };
 
-  response.send(respuesta);
-}
+//   response.send(respuesta);
+// }
 
 function getUser(request, response) {
   let name = request.query.name;
@@ -29,16 +29,16 @@ function getUser(request, response) {
   response.send(respuesta);
 }
 
-function getUser2parms(request, response) {
-  let name = request.params.name;
-  if (usuario != null && name === usuario.nombre) response.send(usuario);
-  else
-    response.send({
-      error: true,
-      codigo: 200,
-      mensaje: "El usuario no existe",
-    });
-}
+// function getUser2parms(request, response) {
+//   let name = request.params.name;
+//   if (usuario != null && name === usuario.nombre) response.send(usuario);
+//   else
+//     response.send({
+//       error: true,
+//       codigo: 200,
+//       mensaje: "El usuario no existe",
+//     });
+// }
 
 function postUser(request, response) {
   let respuesta;
